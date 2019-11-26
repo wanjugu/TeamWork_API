@@ -1,0 +1,21 @@
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4Njk0M2Q2MC1hZWZjLTRhMzctYjA4OS1kNmE4ZjE2Y2JkYTYiLCJpYXQiOjE1NzQzNDE2MzMsImV4cCI6MTU3NTU1MTIzM30.3H9dhE4dbmIiJAVqURxkEdPeEj3xd5l1l8BTNdtVlkc"}
+
+{
+	"email": "test@mail.com",
+	"password": "secretkey"
+}
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Y2U0YWM2ZC00ZjJlLTQ1OTEtYmZlNy0xZWQ3ZWE5ZTkyNjgiLCJpYXQiOjE1NzQzNDM4MjYsImV4cCI6MTU3NTU1MzQyNn0.EGdGb5gl8-MURof0mvJL0MW8-CFfMrv-_Z0xAar7ND0"
+}
+
+{
+	"email": "jim@gmail.com",
+	"password": "user@123"
+}
+
+Cloudinary
+cloudname: dybd3fvj1
+Api key:228583311129153
+API Secret: IkWPya5wYHG0KItAOxiuerW6VR8
+Env Variable: CLOUDINARY_URL=cloudinary://228583311129153:IkWPya5wYHG0KItAOxiuerW6VR8@dybd3fvj1
