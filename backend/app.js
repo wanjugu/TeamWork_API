@@ -99,8 +99,4 @@ app.post('/api/v1/upload',Auth.verifyToken, multerUploads, (req, res) => {
   }))
  }
 });
-
-
-
-
 module.exports = app;
