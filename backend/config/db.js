@@ -7,10 +7,10 @@ dotenv.config();
 
 const pool = new Pool({
    // connectionString: process.env.DB_URL
-  user: 'admin101',
-  host: 'localhost',
-  database: 'api',
-  password: 'user@123',
+  user: 'hdfgvhycembtcf',
+  host: 'ec2-174-129-29-101.compute-1.amazonaws.com',
+  database: 'd87r02ar6crre5',
+  password: '74010842e9f6620620094a1edd56fdf713a1eca6277f741e0afc93ad2aad0d87',
   port: 5432,
 });
 
