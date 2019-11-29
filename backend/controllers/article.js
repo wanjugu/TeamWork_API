@@ -36,11 +36,11 @@ const pool = db.pool;
 
       //fetch all  articles
       async getAllArticles(req,res,next){
-        auth.userLoggedIn(req,res,next);
+        //auth.userLoggedIn(req,res,next);
           const fetchAllArticles = 'SELECT * FROM articles ORDER bY id DESC';
           try{
               const { rows, rowcount } = await pool.query(fetchAllArticles);
-              return res.status(200).send({rows,rowcount});
+              return res.status(200).json(rows); 
           }catch(error){
               return res.status(400).json({error: error});
           }
