@@ -3,6 +3,9 @@ const moment = require('moment');
 const jwt = require('jsonwebtoken');
 const auth = require('../middleware/auth');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 const pool = db.pool;
 
   const Articles = {
