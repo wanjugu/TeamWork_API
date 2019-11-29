@@ -18,7 +18,7 @@ const auth = {
     }
     try {
       //const decoded = await jwt.verify(token, process.env.SECRET);
-      const decoded = jwt.verify(token,process.env.SECRET);      
+      const decoded = jwt.verify(token,'RANDOM_TOKEN_SECRET');      
       const text = 'SELECT * FROM users WHERE id = $1';
       const { rows } = await pool.query(text, [decoded.userId]);
       if(!rows[0]) {
@@ -39,7 +39,7 @@ const auth = {
           return res.status(400).send({ 'message': 'Token is not provided' });
         }
         try {         
-          const decoded = jwt.verify(token,process.env.SECRET);      
+          const decoded = jwt.verify(token,'RANDOM_TOKEN_SECRET');      
           const text = 'SELECT * FROM users WHERE id = $1';
           const { rows } = await pool.query(text, [decoded.userId]);
           if(!rows[0]) {
