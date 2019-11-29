@@ -70,7 +70,7 @@ const user = {
       }
       const token = Helper.generateToken(rows[0].id);
       //return res.status(200).json({message: 'User Login successful'});
-      return res.status(200).send({ token });
+      return res.status(200).send({ token,message: 'User Login successful!Copy the token & save in your machine for api use' });
     } catch(error) {
       return res.status(400).send(error)
     }
