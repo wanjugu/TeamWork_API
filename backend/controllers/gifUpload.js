@@ -35,7 +35,7 @@ const Gif = {
 
          try{
              const { rows,rowCount } = await pool.query(fetchAllGifs);
-             return res.status(200).send({rows,rowCount});
+             return res.status(200).json(rows); 
             
          }catch(error){
          
