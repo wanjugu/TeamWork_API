@@ -42,7 +42,7 @@ app.use((req, res, next) => {
     });
 });
 
-app.post('/api/v1/users',Auth.verifyToken,users.create);
+app.post('/api/v1/users',users.create);
 app.post('/api/v1/users/login',users.login);
 app.delete('/api/v1/users/me', Auth.verifyToken, users.delete);
 
